@@ -7,40 +7,61 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" type="text/css">
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" type="text/css"></head>
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" type="text/css"></head>
-  <link rel="stylesheet" href="css/style.css" type="text/css">
 <body>
-  <section>
-    <div>
-      <h1>Contacts</h1>
-      <form action="">
-        <h1>Add a contact:</h1>
-        <div class="form-group">
-          <label for=""inputFirstName>First Name</label>
-          <input type="firstName" class="form-control" id="inputFirstName">
+  <section class="container">
+    <section class="row">
+      <div>
+        <h1>Contacts</h1>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <form action="">
+            <h1>Add a contact:</h1>
+            <div class="form-group">
+              <label for=""inputFirstName>First Name</label>
+              <input type="firstName" class="form-control" id="inputFirstName">
+            </div>
+            <div class="form-group">
+              <label for="inputLastName">Last Name</label>
+              <input type="lastName" class="form-control" id="inputLastName">
+            </div>
+            <div class="form-group">
+              <label for="inputPhoneNUmber">Phone Number</label>
+              <input type="phoneNumber" class="form-control" id="inputPhoneNumber">
+            </div>
+            <div class="form-group">
+              <label for="inputStreet">Street</label>
+              <input type="street" class="form-control" id="inputStreet">
+            </div>
+            <div class="form-group">
+              <label for="inputCity">City</label>
+              <input type="city" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group">
+              <label for="inputState">State</label>
+              <input type="lastState" class="form-control" id="inputState">
+            </div>
+            <button class="btn btn-default btn-primary">Add</button>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="inputLastName">Last Name</label>
-          <input type="lastName" class="form-control" id="inputLastName">
+        <div class="col-sm-4 col-md-4 col-lg-4">
+          <h3>Nextdoor Neighbor</h3>
+          <ul>
+            <li>First Name: <span id="neighborFirstName"></span></li>
+            <li>Last Name: <span id="neighborFirstName"></span></li>
+            <li>Phone Number: <span id="neighborFirstName"></span></li>
+            <li>Addresses:
+              <ul></ul>
+            </li>
+          </ul>
         </div>
-        <div class="form-group">
-          <label for="inputPhoneNUmber">Phone Number</label>
-          <input type="phoneNumber" class="form-control" id="inputPhoneNumber">
-        </div>
-        <div class="form-group">
-          <label for="inputStreet">Street</label>
-          <input type="street" class="form-control" id="inputStreet">
-        </div>
-        <div class="form-group">
-          <label for="inputCity">City</label>
-          <input type="city" class="form-control" id="inputCity">
-        </div>
-        <div class="form-group">
-          <label for="inputState">State</label>
-          <input type="lastState" class="form-control" id="inputState">
-        </div>
-        <button class="btn btn-default btn-primary">Add</button>
-      </form>
-    </div>
+      </div>
+    </section>
+    <section class="container">
+      <div>
+        <h3>Contacts:</h3>
+        <ul>
+        </ul>
+      </div>
+    </section>
   </section>
   <script src="https://code.jquery.com/jquery.min.js"></script>
 </body>

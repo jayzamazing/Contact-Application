@@ -1,0 +1,28 @@
+{
+  "name": "contactsapp",
+  "version": "1.0.0",
+  "description": "Contacts application to allow user to store contacts that include name, phone number, and address, and then allows users to view each of those contacts.",
+  "main": "index.html",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayzamazing/Contact-Application.git"
+  },
+  "keywords": [
+    "Html",
+    "Javascript",
+    "Jquery"
+  ],
+  "author": "Adrian J Lopez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jayzamazing/Contact-Application/issues"
+  },
+  "homepage": "https://github.com/jayzamazing/Contact-Application#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "normalize.css": "^4.1.1"
+  }
+}

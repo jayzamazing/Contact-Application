@@ -60,7 +60,7 @@ $('document').ready(function() {
     $('#contactsLinks').html('');
     var names = contacts.iterateOverFirstLast();
     for (var i in names){
-      $('#contactsLinks').append('<li><a>' + names[i] + '</a></li>');
+      $('#contactsLinks').append('<li><a href="#">' + names[i] + '</a></li>');
     }
   }
   /*
@@ -69,7 +69,7 @@ $('document').ready(function() {
   function setPhoneNumbers(list) {
     $('#neighborPhoneNumber').html('');
     for (i = 2, j = 0; j < 2; i++, j++) {
-      if (list[i] !== null && list[i] !== undefined){
+      if (list[i] !== null && list[i] !== undefined && list[i] !== ''){
         $('#neighborPhoneNumber').append('<li>' + list[i] + '</li>');
       }
     }
@@ -80,7 +80,7 @@ $('document').ready(function() {
   function setAddresses(list) {
     $('#neighborAddressList').html('');
     for (i = 4, j = 0; j < 2; i += 3, j++){
-      if (list[i] !== null && list[i] !== undefined){
+      if (list[i] !== null && list[i] !== undefined && list[i] !== ''){
         $('#neighborAddressList').append('<li>' + list[i] + ', ' + list[i + 1] + ', ' + list[i + 2] + '</li>');
       }
     }
